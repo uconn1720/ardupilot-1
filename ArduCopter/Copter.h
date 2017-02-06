@@ -225,7 +225,7 @@ private:
 #endif
 
     // gnd speed limit required to observe optical flow sensor limits
-    float ekfGndSpdLimit;
+    float ekfGndSpdLimit = 1;
 
     // scale factor applied to velocity controller gain to prevent optical flow noise causing excessive angle demand noise
     float ekfNavVelGainScaler;
